@@ -22,7 +22,6 @@ import jxl.write.biff.RowsExceededException;
 
 
 public class CWOutputFile {
-
     /**
      * wOutputFile 作用：把内容写入到Excel文件中。
      * wOutputFile写结果文件   wOutputFile(文件路径、用例编号、用例标题、预期结果、实际结果、测试结果)
@@ -31,6 +30,7 @@ public class CWOutputFile {
      * @throws WriteException
      */
     public void wOutputFile(String filepath,String caseNo,String testPoint,String testData,String preResult,String fresult) throws BiffException, IOException, WriteException{
+        System.out.println("change by ToModify");
         File output=new File(filepath);
         String result = "";
         InputStream instream = new FileInputStream(filepath);
